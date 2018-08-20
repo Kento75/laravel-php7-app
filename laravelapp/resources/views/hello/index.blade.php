@@ -8,6 +8,10 @@
 </head>
 <body>
   <h1>Blade/Index</h1>
-  <p>{{ $msg }}</p>
+  <ol>
+    @foreach($data as $item)
+      <li>{{ $item }}</li>
+    @endforeach
+  </ol>
 </body>
 </html>
